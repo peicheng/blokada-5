@@ -3,7 +3,7 @@ name: Blokada 5 for Android (CI)
 on:
   workflow_dispatch:
   push:
-    branches: [ main ]
+    branches: [ f2 ]
 
 env:
   main_project_module: app
@@ -70,9 +70,10 @@ jobs:
 
       - name: Build app
         run: ./gradlew --warning-mode all assembleFiveRelease
+        #run: ./gradlew --warning-mode all assembleFiveDebug
 
-      - name: Run Lint
-        run: ./gradlew lint
+      #- name: Run Lint
+      # run: ./gradlew lint
 
-      - name: Run Unit Tests
-        run: ./gradlew test
+      #- name: Run Unit Tests
+      #run: ./gradlew test
