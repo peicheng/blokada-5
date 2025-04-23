@@ -181,6 +181,31 @@ object DnsDataSource {
             label = "Quad 101"
         ),
         Dns.plaintextDns(
+            id = "tnf",
+            ips = listOf("61.31.1.1"),
+            label = "tnf"
+        ),
+        Dns.plaintextDns(
+            id = "hinet2",
+            ips = listOf("168.95.192.1"),
+            label = "hinet2"
+        ),
+        Dns.plaintextDns(
+            id = "hinetAll",
+            ips = listOf("168.95.192.1", "168.95.1.1"),
+            label = "hinet"
+        ),
+        Dns.plaintextDns(
+            id = "p2",
+            ips = listOf("76.76.2.2"),
+            label = "p2"
+        ),
+        Dns.plaintextDns(
+            id = "nextdns",
+            ips = listOf("45.90.30.0"),
+            label = "nextdns"
+        ),
+        Dns.plaintextDns(
             id = "uncensored",
             ips = listOf("91.239.100.100", "89.233.43.71"),
             label = "Uncensored DNS"
