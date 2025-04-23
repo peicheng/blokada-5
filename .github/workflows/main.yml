@@ -69,9 +69,12 @@ jobs:
         run: ./gradlew clean
 
       - name: Build app
-        run: ./gradlew --warning-mode all assembleFiveRelease
-        #run: ./gradlew --warning-mode all assembleFiveDebug
-
+        #run: ./gradlew --warning-mode all assembleFiveRelease
+        run: ./gradlew --warning-mode all assembleFiveDebug
+      - uses: actions/upload-artifact@v4
+        with:
+          name: my-artifact
+          path: '**/*.apk'
       #- name: Run Lint
       # run: ./gradlew lint
 
