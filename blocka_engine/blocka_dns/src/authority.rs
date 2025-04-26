@@ -296,7 +296,7 @@ type Requests = u64;
 
 pub fn with_cache<T: Blocklist>(wrapped_list: T, cap: usize) -> CachedList<T> {
     CachedList {
-        cache: LruCache::new(cap),
+        cache: LruCache::new(20000),
         counter: Count {
             allowed: 0,
             denied: 0,
