@@ -209,6 +209,7 @@ object DnsDataSource {
             id = "nextdns doh",
             ips = listOf("45.90.30.0"),
             port = 443,
+            path = "",
             name = "ipv4-zepto-tpe-1.edge.nextdns.io",    
             label = "ipv4-zepto-tpe-1.edge.nextdns.io"
         ),
@@ -216,7 +217,8 @@ object DnsDataSource {
             id = "nextdns doh dns",
             ips = listOf("45.90.30.0"),
             port = 443,
-            name = "dns.nextdns.io",      
+            name = "dns.nextdns.io",  
+            path = "",
             label = "dns.nextdns.io"
         ),
         Dns.plaintextDns(
