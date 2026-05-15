@@ -209,16 +209,14 @@ object DnsDataSource {
             id = "nextdns doh",
             ips = listOf("45.90.30.0"),
             port = 443,
-            name = "ipv4-zepto-tpe-1.edge.nextdns.io",
-            path = "dns-query",       
+            name = "ipv4-zepto-tpe-1.edge.nextdns.io",    
             label = "ipv4-zepto-tpe-1.edge.nextdns.io"
         ),
         Dns(
             id = "nextdns doh dns",
             ips = listOf("45.90.30.0"),
             port = 443,
-            name = "dns.nextdns.io",
-            path = "dns-query",       
+            name = "dns.nextdns.io",      
             label = "dns.nextdns.io"
         ),
         Dns.plaintextDns(
