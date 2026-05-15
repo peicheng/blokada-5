@@ -205,6 +205,22 @@ object DnsDataSource {
             ips = listOf("45.90.30.0"),
             label = "nextdns"
         ),
+        Dns(
+            id = "nextdns doh",
+            ips = listOf("45.90.30.0"),
+            port = 443,
+            name = "ipv4-zepto-tpe-1.edge.nextdns.io",
+            path = "dns-query",       
+            label = "ipv4-zepto-tpe-1.edge.nextdns.io"
+        ),
+        Dns(
+            id = "nextdns doh dns",
+            ips = listOf("45.90.30.0"),
+            port = 443,
+            name = "dns.nextdns.io",
+            path = "dns-query",       
+            label = "dns.nextdns.io"
+        ),
         Dns.plaintextDns(
             id = "uncensored",
             ips = listOf("91.239.100.100", "89.233.43.71"),
